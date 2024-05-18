@@ -38,8 +38,8 @@
         }
 
         .water-tap {
-            width: 260px;
-            height: 260px;
+            width: 200px;
+            height: 200px;
             background-image: url('water-tap.png');
             background-size: contain;
             background-repeat: no-repeat;
@@ -68,11 +68,16 @@
         }
 
         .water-tap-label {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: bold;
             color: #2c3e50;
             margin-bottom: 20px;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .water-tap-image {
+            width: 120px;
+            height: 120px;
         }
 
         .back-button {
@@ -129,10 +134,7 @@
             </div>
         </div>
     </div>
-
-</div>
-<a href="neam.html" class="back-button">عودة</a>
-</div>
+    <a href="neam.html" class="back-button">عودة</a>
     <script>
         const taps = document.querySelectorAll('.water-tap');
         taps.forEach(tap => {
