@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة صنابير المياه</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #9dedf3, #147de7);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 50px;
+            font-size: 40px;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .water-taps {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: -30px;
+        }
+
+        .water-tap {
+            width: 260px;
+            height: 260px;
+            background-image: url('water-tap.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 30px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border: 4px solid transparent;
+            border-radius: 50%;
+        }
+
+        .water-tap.active {
+            background-image: url('water-tap-active.png');
+            transform: scale(1.1);
+            box-shadow: 0 12px 18px rgba(0, 0, 0, 0.15);
+            color: #34495e;
+            border: 4px solid #2ecc71;
+        }
+
+        .water-tap:not(.active) {
+            border: 4px solid #e74c3c;
+        }
+
+        .water-tap-label {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button {
+            display: block;
+            width: 160px;
+            height: 50px;
+            background-color: #035b96;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin: 50px auto 0;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button:hover {
+            background-color: #2c3e50;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 18px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>صنابير المياه</h1>
+        <div class="water-taps">
+            <div class="water-tap" id="tap1">
+                <img src="khatchn.png" alt="صنبور المطبخ" class="water-tap-image">
+                <div class="water-tap-label">صنبور المطبخ</div>
+            </div>
+            <div class="water-tap" id="tap2">
+                <img src="sanbor.png" alt="صنبور الحمام" class="water-tap-image">
+                <div class="water-tap-label">صنبور الحمام</div>
+            </div>
+            <div class="water-tap" id="tap3">
+                <img src="gardwn.png" alt="صنبور الحديقة" class="water-tap-image">
+                <div class="water-tap-label">صنبور الحديقة</div>
+            </div>
+            <div class="water-tap" id="tap4">
+                <img src="landry.png" alt="صنبور الغسيل" class="water-tap-image">
+                <div class="water-tap-label">صنبور الغسيل</div>
+            </div>
+            <div class="water-tap" id="tap5">
+                <img src="drinking.png" alt="صنبور الشرب" class="water-tap-image">
+                <div class="water-tap-label">صنبور الشرب</div>
+            </div>
+            <div class="water-tap" id="tap6">
+                <img src="outdor.png" alt="صنبور الخارج" class="water-tap-image">
+                <div class="water-tap-label">صنبور الخارج</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<a href="neam.html" class="back-button">عودة</a>
+</div>
+    <script>
+        const taps = document.querySelectorAll('.water-tap');
+        taps.forEach(tap => {
+            tap.addEventListener('click', () => {
+                tap.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إعدادات النظام</title>
+  <style>
+    /* استيراد خطوط Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+    /* تنسيق عام */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    h1, h2 {
+      font-weight: 700;
+      color: #333;
+    }
+    p, label, input, button {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* تنسيق قسم الاتصال بالشبكة */
+    .network-settings {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+    .network-settings h2 {
+      margin-top: 0;
+    }
+    .network-settings label {
+      display: block;
+      margin-bottom: 12px;
+    }
+    .network-settings input[type=text],
+    .network-settings button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .network-settings button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .network-settings button:hover {
+      background-color: #0056b3;
+    }
+
+    /* تنسيق قسم الاتصال بالدعم الفني */
+    .support-section {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .support-section h2 {
+      margin-top: 0;
+    }
+    .support-section p {
+      margin-bottom: 24px;
+    }
+    .support-section button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .support-section button:hover {
+      background-color: #0056b3;
+    }
+
+    .back-button {
+            display: block;
+            width: 160px;
+            height: 50px;
+            background-color: #035b96;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin: 50px auto 0;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button:hover {
+            background-color: #2c3e50;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 18px rgba(0, 0, 0, 0.15);
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>الاعدادات</h1>
+    <div class="network-settings">
+      <h2>اتصال الشبكة</h2>
+      <label for="wifi-name">اسم الشبكة:</label>
+      <input type="text" id="wifi-name" placeholder="أدخل اسم الشبكة">
+      <label for="wifi-password">كلمة المرور:</label>
+      <input type="text" id="wifi-password" placeholder="أدخل كلمة المرور">
+      <button>اتصال</button>
+    </div>
+    <div class="support-section">
+      <h2>الدعم الفني</h2>
+      <p>إذا كنت بحاجة إلى مساعدة فنية، يرجى الضغط على الزر أدناه لبدء محادثة مع أحد ممثلي الدعم.</p>
+      <button>الاتصال بالدعم الفني</button>
+    </div>
+    <a href="neam.html" class="back-button">عودة</a>
+    </div>
+</body>
+</html>
